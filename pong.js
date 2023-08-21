@@ -2,6 +2,16 @@
 let ctx, p1_y, p2_y, p1_points, p2_points;
 const h = 500, w = 800, p_w = 20, p_h = 200, p1_x = 10, p2_x = w - p_w - 10;
 
+let ball_y_orientattion, ball_x_orientation, ball_x, ball_y;
+
+function initBall(){
+    console.log(`${p1_points} VS ${p2_points}`);
+    ball_y_orientation = Math.pow(2, Math.floor( Math.random() * 2 )+1) - 3;
+    ball_x_orientation = Math.pow(2, Math.floor( Math.random() * 2 )+1) - 3; 
+    ball_x = w / 2 -10;
+    ball_y = h / 2 -10;
+}
+
 function setup() {
     const canvas = document.getElementById("canvas");
     ctx = canvas.getContext("2d");
@@ -22,3 +32,6 @@ function setup() {
 function loop() {
 
 }
+
+
+setup();
