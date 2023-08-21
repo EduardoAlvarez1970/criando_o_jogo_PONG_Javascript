@@ -1,5 +1,5 @@
 
-let ctx, p1_y, p2_y, p1_points ;
+let ctx, p1_y, p2_y, p1_points, p2_points;
 const h = 500, w = 800, p_w = 20, p_h = 200, p1_x = w - p_w - 10;
 
 function setup() {
